@@ -393,6 +393,22 @@ body{
 	transition:all,0.5S;
 }
 
+.buttons3{
+	background-color:#F00;
+	margin: 1% 2%;
+	width: 25rem;
+	height: 2rem;
+	color: #FFF;
+	font-size: medium;
+	font-weight:bolder;
+	text-align: center;
+	text-transform:uppercase;/* letra maiúscula*/
+	padding:3px 5px;
+	border:1px solid #000;
+	border-radius:8px;	
+    transition:all,0.9S;
+}
+
 textarea{
 	resize: none;
 	padding: 1px 3px;

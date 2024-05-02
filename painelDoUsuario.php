@@ -45,33 +45,30 @@
 						$acao = 'ler';
 						if (possuiPermissao($idUsuario, $funcionalidade, $acao)) {
 							echo "<li class='buttons2'><a href='#'>Listar produtos</a></li>";
-							echo "Usuário pode visualizar produtos.";
 						} else {
-							echo "<br/>Usuário não pode visualizar produtos.";
+							echo "<li class='buttons3'><a href='#'>Listar produtos</a></li>";
 						}
 						//Create
 						$acao = 'incluir';
 						if (possuiPermissao($idUsuario, $funcionalidade, $acao)) {
-							echo "<li class='buttons2'><a href='#'>Listar produtos</a></li>";
-							echo "Usuário pode cadastrar produtos.";
+							echo "<li class='buttons2'><a href='#'>Inclur produtos</a></li>";
 						} else {
-							echo "<br/>Usuário não pode cadastrar produtos.";
+							echo "<li class='buttons3'><a href='#' disabled>Inclur produtos</a></li>";
 						}
 						//Update
 						$acao = 'alterar';
 						if (possuiPermissao($idUsuario, $funcionalidade, $acao)) {
-							echo "<li class='buttons2'><a href='#'>Listar produtos</a></li>";
-							echo "Usuário pode alterar produtos.";
+							echo "<li class='buttons2'><a href='#'>Alterar produtos</a></li>";
 						} else {
-							echo "<br/>Usuário não pode alterar produtos.";
+							echo "<li class='buttons3'><a href='#'>Alterar produtos</a></li>";
 						}
 						//Delete
 						$acao = 'excluir';
 						if (possuiPermissao($idUsuario, $funcionalidade, $acao)) {
-							echo "<li class='buttons2'><a href='#'>Listar produtos</a></li>";
+							echo "<li class='buttons2'><a href='#'>Excluir produtos</a></li>";
 							echo "Usuário pode excluir produtos.";
 						} else {
-							echo "<br/>Usuário não pode excluir produtos.";
+							echo "<li class='buttons3'><a href='#'>Excluir produtos</a></li>";
 						}
 					echo "</ul>";							
 				echo "</div>";
